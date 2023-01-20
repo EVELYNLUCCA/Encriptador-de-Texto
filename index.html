@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+            <img src="imagenes/logoAlura.png" class="imgLogo" alt="Logo Alura">
+            <img class="imgLupa" src="imagenes/lupa.png">
+            <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+
+    <main>
+
+        <section class="section1">
+            <textarea class="textarea" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="requisitos">❗Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="contenedor-botones">
+                <button class="btn-encriptar">Encriptar!</button>
+                <button class="btn-desencriptar">Desencriptar!</button>
+                <div class="container-btn-limpiar">
+                    <button class="btn-limpiar">Limpiar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="container-munieco">
+                <img class="img-munieco" src="imagenes/muñeco.png" alt="Imagen Muñeco">
+            </div>
+            <div class="container-h3">
+                <h3>Ningún mensaje fue encontrado</h3>
+            </div>
+            <div class="container-parrafo">
+                <p>Ingresa el texto que deseas encriptar o desencriptar:</p>
+            </div>
+            <div class="container-resultado">
+                <h3>Mensaje encriptado:</h3>
+                <p class="texto-resultado"></p>
+            </div>
+            <div class="contenedor-btn-copiar">
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+            <p>Desarrollado por Evelyn Lucca</p>
+            <p>©Todos los derechos reservados ~ 2023</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
