@@ -198,3 +198,117 @@ footer p {
 .ocultar {
     display: none;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        width: 100%;
+        height: 65px;
+    }
+
+    .imgLogo {
+        width: 26px;  
+        height: 40px;
+        padding-top: 13px;
+        margin-left: 25px;
+        }
+
+    .imgLupa {
+        width:4.5%;
+        margin-left: 210px; /*margin-left: 355px;*/
+    }
+
+    .titulo {
+        margin-top:20px;
+        margin-left: 18px;
+        font-size: 20px;
+    }
+    .textarea { 
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    .requisitos {
+        font-size: 12px; 
+    }
+    
+    .btn-encriptar, .btn-desencriptar, .btn-limpiar {
+        width: 130px;
+        height: 32px;
+        border-radius: 16px;
+        font-size: 13px;
+    }
+    
+    .btn-encriptar:hover {
+        width: 150px;
+        height: 38px;
+    }
+
+    .btn-desencriptar:hover {
+        width: 150px;
+        height: 38px;
+    }
+
+    .btn-limpiar:hover {
+        width: 150px;
+        height: 38px;
+    }
+
+    .section2 {
+        width: 30%;
+        margin-right: 20px;
+    }
+    
+    .container-munieco {
+        width: 80%;
+        height: 40%; 
+    }
+
+    .img-munieco {
+        width: 100%;
+        height: 100%;
+        margin-left: 20px;
+    }
+
+    .container-h3 {
+        width: 90%;
+        height: 10%;
+        font-size: 15px;
+        margin-bottom: 85px;
+        margin-left: 11px;
+    }
+    
+    .container-parrafo {
+        width: 90%;
+        height: 10%;
+        font-size: 12px;
+        margin-left: 11px;
+    }
+
+    .container-resultado {
+        font-size: 15px;
+    }
+    
+    .btn-copiar {
+        height: 32px;
+        border-radius: 16px;
+        font-size: 13px;
+    }
+    
+    .btn-copiar:hover {
+        width: 150px;
+        height: 38px;
+    }
+    
+    footer p {
+        font-size: 11px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 375px){
+
+}
