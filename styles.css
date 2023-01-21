@@ -199,9 +199,9 @@ footer p {
     display: none;
 }
 
+ /* ------------------------------ Diseño tablet -------------------------------- */
 
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
 
     header {
         width: 100%;
@@ -217,7 +217,7 @@ footer p {
 
     .imgLupa {
         width:4.5%;
-        margin-left: 210px; /*margin-left: 355px;*/
+        margin-left: 210px;
     }
 
     .titulo {
@@ -226,6 +226,7 @@ footer p {
         font-size: 20px;
     }
     .textarea { 
+        width: 90%;
         font-size: 20px;
         margin-top: 60px;
     }
@@ -308,7 +309,10 @@ footer p {
     
 }
 
+/* ------------------------------ Diseño celular -------------------------------- */
+
 
 @media only screen and (max-width: 375px){
 
 }
+
