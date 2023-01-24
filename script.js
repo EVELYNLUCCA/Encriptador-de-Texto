@@ -115,6 +115,9 @@ function desencriptarTexto(textoRecuperado) {
     document.querySelector(".textarea").value = "";
     var limpiar = document.querySelector(".texto-resultado");
     limpiar.innerHTML = "";
+    // munieco.style.display = "flex";
+    // h3.style.display = "flex";
+    // parrafo.style.display = "flex";
     location. reload(); // Método para recargar la página.
     }
 

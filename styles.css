@@ -1,4 +1,5 @@
 * {
+    /* border: 2px solid blue; */
     margin: 0;
     padding: 0;
     font-family: 'Inter';
@@ -37,9 +38,10 @@ header {
 
 main {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     background: #E5E5E5;
     display: flex; 
+    align-items: center;
     justify-content: space-between; 
 }
 
@@ -49,23 +51,31 @@ section {
 }
 
 .section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 65%;
+    height: 70vh;
 }
 
 .textarea { 
+    width: 90%;
     background: #E5E5E5;
     margin-left: 40px;
     resize: none; /*esto quita la posibilidad de agrandar y achicar el textarea*/
     font-size: 28px;
     border: none;
     color:#0A3871;
-    margin-top: 90px;
+    margin-top: 70px;
     text-transform: lowercase;
 }
 
 ::placeholder {color:#0A3871}
 .textarea:focus { 
     outline: none; /*quita el foco, el borde(recuedro) cuando nos paramos dentro del textarea*/
+}
+.section1 div {
+    width: 90%;
 }
 
 .requisitos {
@@ -75,16 +85,17 @@ section {
     margin-top: 100px;
 }
 
-.contenedor-botones {
+.container-botones {
+    width: 90%;
     display: flex;
-    margin-bottom: 115px;
+    justify-content: center;
 }
 
 .btn-encriptar, .btn-desencriptar, .btn-limpiar {
-    width: 200px;
+    width: 30%;
     height: 35px;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
     border-radius: 12px;
     border: 1px solid #0A3871;
     font-size: 16px;
@@ -110,6 +121,7 @@ section {
     width: 210px;
     height: 40px;
 }
+
 .btn-limpiar {
     background-color:#edecec;
     color: #f8312f;
@@ -122,12 +134,15 @@ section {
 }
 
 .section2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    height: 70vh;
     width: 25%;
     background: white;
     border-radius: 20px;
     margin-right: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -135,21 +150,20 @@ section {
 .container-munieco {
     width: 100%;
     height: 70%; 
-    padding-top: 20px; 
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .container-h3 {
     width: 100%;
-    height: 20%;
+    height: 15%;
     text-align: center;
     font-size: 18px;
 }
 
 .container-parrafo {
     width: 100%;
-    height: 20%;
+    height: 10%;
     text-align: center;
 }
 
@@ -160,7 +174,7 @@ section {
     box-sizing: border-box;
 }
 
-.contenedor-btn-copiar {
+.container-btn-copiar {
     width: 100%;
     height: 20%;
 }
@@ -183,15 +197,16 @@ section {
 }
 
 footer {
-    background: #E5E5E5;
-    padding-top: 40px;
+    padding-top: 15px;
     width: 100%;
-    height: 70px;
+    height: 5vh;
     text-align: center;
     color: #004369;
+
 }
 
 footer p {
+    
     font-size: 14px;
 }
 
@@ -205,7 +220,9 @@ footer p {
 
     header {
         width: 100%;
-        height: 65px;
+        height: 10vh;
+        display: flex;
+        align-items: center;
     }
 
     .imgLogo {
@@ -216,7 +233,8 @@ footer p {
         }
 
     .imgLupa {
-        width:4.5%;
+        width:4%;
+        height: 50%;
         margin-left: 210px;
     }
 
@@ -225,21 +243,47 @@ footer p {
         margin-left: 18px;
         font-size: 20px;
     }
+
+    main {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section1 {
+        width: 100%;
+        height: 50vh;
+        margin: 15px;
+    }
     .textarea { 
         width: 90%;
+        height: 40vh;
         font-size: 20px;
         margin-top: 60px;
     }
 
     .requisitos {
-        font-size: 12px; 
+        margin: 0;
+        font-size: 15px; 
     }
     
+    .container-botones {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 10vh;
+    } 
+
     .btn-encriptar, .btn-desencriptar, .btn-limpiar {
-        width: 130px;
-        height: 32px;
+        width: 30%;
+        height: 4vh;
         border-radius: 16px;
-        font-size: 13px;
+        font-size: 18px;
+        margin: 0;
     }
     
     .btn-encriptar:hover {
@@ -258,44 +302,52 @@ footer p {
     }
 
     .section2 {
-        width: 30%;
-        margin-right: 20px;
+        width: 90%;
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
     }
     
     .container-munieco {
-        width: 80%;
-        height: 40%; 
-    }
-
-    .img-munieco {
-        width: 100%;
-        height: 100%;
-        margin-left: 20px;
+        display: none;
     }
 
     .container-h3 {
         width: 90%;
-        height: 10%;
-        font-size: 15px;
-        margin-bottom: 85px;
-        margin-left: 11px;
+        height: 15vh;
+        font-size: 18px;
+    }
+
+    .container-h3 h3 {
+        margin-top: 60px;
     }
     
     .container-parrafo {
         width: 90%;
-        height: 10%;
-        font-size: 12px;
-        margin-left: 11px;
+        height: 15vh;
+        font-size: 15px;
     }
 
     .container-resultado {
+        width: 90%;
+        height: 15vh;
         font-size: 15px;
     }
     
+    .container-btn-copiar {
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
     .btn-copiar {
-        height: 32px;
+        height: 4vh;
         border-radius: 16px;
-        font-size: 13px;
+        font-size: 18px;
     }
     
     .btn-copiar:hover {
@@ -303,8 +355,17 @@ footer p {
         height: 38px;
     }
     
+    footer {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     footer p {
-        font-size: 11px;
+        margin: 0;
+        font-size: 15px;
     }
     
 }
@@ -314,5 +375,184 @@ footer p {
 
 @media only screen and (max-width: 375px){
 
-}
+        body {
+            height: 100vh;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            height: 10vh;
+        }
+    
+        .imgLogo {
+            width: 20px;  
+            height: 30px;
+            padding-top: 16px;
+            margin-left: 20px;
+            }
+
+            
+        .imgLupa {
+            width:25px;
+            height: 45px;
+            margin-top: 8px;
+            margin-left: 42px;
+        }
+    
+        .titulo {
+            margin-top:19px;
+            margin-left: 19px;
+            font-size: 17px;
+        }
+
+        main {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 60vh;
+        }
+
+        .textarea {
+            height: 40vh;
+            margin:0;
+            width: 80%;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    
+        .requisitos {
+            width: 100%;
+            height: 1vh;
+            margin: 0;
+            position: relative;
+            left:-75px;
+            font-size: 10px; 
+        }
+
+        .container-botones {
+            width: 100%;
+            height: 20vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .container-btn-limpiar {
+            width: 100%;
+            height: 5vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn-encriptar, .btn-desencriptar, .btn-limpiar {
+            margin: 0;
+            margin-top: 15px;
+            width: 90%;
+            height: 33px;
+            border-radius: 16px;
+            font-size: 13px;
+        }
+
+        .btn-encriptar, .btn-desencriptar, .btn-limpiar:hover {
+            width: 90%;
+            height: 33px;
+            border-radius: 16px;
+            font-size: 13px;
+        }
+        
+
+        .section2 {
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center;
+            width: 90%;
+            height: 20vh;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        .container-munieco {
+            display: none;
+        }
+    
+        .container-h3 {
+            width: 100%;
+            height: 10vh;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-h3 h3 {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .container-parrafo {
+            width: 100%;
+            height: 10vh;
+            font-size: 12px;
+            margin: 0;
+        }
+    
+        .container-parrafo p {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container-resultado {
+            height: 15vh;
+            padding-top: 7px;
+            padding-left: 30px;
+            padding-bottom: 0;
+            font-size: 11px;
+        }
+        
+        .container-btn-copiar {
+            height: 5vh;
+
+        }
+
+        .btn-copiar {
+            width: 40%;
+            height: 24px;
+            border-radius: 18px;
+            font-size: 13px;
+        }
+
+        .btn-copiar:hover {
+            width: 40%;
+            height: 24px;
+            border-radius: 18px;
+            font-size: 13px;
+        }
+        
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 10vh;
+            background: #E5E5E5;
+        }
+
+        footer p {
+            font-size: 9px;
+        }
+    }
+    
 
