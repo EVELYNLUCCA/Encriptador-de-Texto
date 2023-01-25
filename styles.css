@@ -1,5 +1,4 @@
 * {
-    /* border: 2px solid blue; */
     margin: 0;
     padding: 0;
     font-family: 'Inter';
@@ -8,10 +7,12 @@
 }
 
 header {
+    background-color: #0A3871;
     display: flex;
 }
 
 .imgLogo {
+    filter: brightness(0) invert(1); /*vuelve el logo de color blanco*/
     padding-top: 16px;
     margin-left: 20px;
     width: 2.5%;
@@ -19,6 +20,7 @@ header {
 }
 
 .imgLupa {
+    filter: brightness(0) invert(1);
     margin-top: 2px;
     width:3%;
     margin-left: 355px;
@@ -30,7 +32,7 @@ header {
     text-align: center;
     justify-content: center;
     margin-left: 40px;
-    color: #004369;
+    color: white;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 800;
@@ -199,14 +201,14 @@ section {
 footer {
     padding-top: 15px;
     width: 100%;
-    height: 5vh;
+    height: 8vh;
     text-align: center;
-    color: #004369;
+    background-color: #0A3871;
 
 }
 
 footer p {
-    
+    color: white;
     font-size: 14px;
 }
 
@@ -255,7 +257,7 @@ footer p {
 
     .section1 {
         width: 100%;
-        height: 50vh;
+        height: 55vh;
         margin: 15px;
     }
     .textarea { 
@@ -303,7 +305,7 @@ footer p {
 
     .section2 {
         width: 90%;
-        height: 30vh;
+        height: 25vh;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -418,7 +420,7 @@ footer p {
             flex-direction: column;
             align-items: center;
             width: 100%;
-            height: 60vh;
+            height: 50vh;
         }
 
         .textarea {
@@ -430,17 +432,17 @@ footer p {
         }
     
         .requisitos {
+            display: inline;
             width: 100%;
             height: 1vh;
             margin: 0;
-            position: relative;
-            left:-75px;
+            margin-left: 15px;
             font-size: 10px; 
         }
 
         .container-botones {
             width: 100%;
-            height: 20vh;
+            height: 18vh;
             margin: 0;
             display: flex;
             align-items: center;
@@ -478,8 +480,7 @@ footer p {
             flex-wrap: wrap; 
             align-items: center;
             width: 90%;
-            height: 20vh;
-            margin: 0;
+            height: 18vh;
             box-sizing: border-box;
             overflow: hidden;
         }
@@ -547,7 +548,7 @@ footer p {
             align-items: center;
             justify-content: center;
             height: 10vh;
-            background: #E5E5E5;
+            background:#0A3871;
         }
 
         footer p {
